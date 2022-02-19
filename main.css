@@ -1,0 +1,249 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header*/
+
+header nav .Menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+s .Menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.Menu li a:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  transform: scale(1.05);
+  padding: 0.5rem 1rem;
+}
+
+/*Body*/
+
+.playlogo {
+  width: 175px;
+  height: 75px;
+  display: block;
+  margin: auto;
+}
+
+.switchlogo {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: auto;
+}
+
+.xboxlogo {
+  width: 175px;
+  height: 75px;
+  display: block;
+  margin: auto;
+}
+
+.playlogo:hover {
+  transform: scale(1.1);
+}
+.switchlogo:hover {
+  transform: scale(1.1);
+}
+.xboxlogo:hover {
+  transform: scale(1.1);
+}
+
+body {
+  background: linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, black 25%, transparent 25%),
+    linear-gradient(45deg, black 25%, transparent 25%);
+  background-size: 2em 2em;
+  background-color: #232323;
+}
+
+.subtitle {
+  text-align: center;
+  color: #dfe6e9;
+  font-size: 1.5rem;
+}
+
+.title h1 {
+  color: crimson;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2.9em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container .header,
+.container .content,
+.container .container,
+.container .footer,
+.container .container {
+  background: ;
+  padding: 20px;
+  border: 3px solid #000000;
+}
+
+.container .header,
+.container .footer {
+  grid-column: 1/6;
+  background-color: #ac0033;
+  color: #ffffff;
+}
+
+.container .content {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+
+.content {
+  background-color: #ac0033;
+  display: flex;
+}
+
+.article {
+  background: #000000;
+  padding: 20px;
+  margin-top: 5px;
+  color: #dfe6e9;
+}
+
+.content .article h1,
+.content .article p {
+  padding: 10px;
+}
+
+.container .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  background: #485460;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .sidebar img {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.container .related-post {
+  background: #2d3436;
+  color: #ffffff;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.container > .related-post:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #ffffff;
+}
+
+/*Footer*/
+
+#sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.logos {
+  width: 50px;
+  height: 50px;
+  animation: from-left 2s ease;
+}
+
+@keyframes from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Productos*/
+
+.producto {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.cosas {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.cosas img {
+  order: -1;
+  align-self: center;
+  width: 225px;
+  height: 300px;
+  animation: from-right 2s ease;
+}
+
+.cosas button {
+  margin-top: auto;
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@keyframes from-right {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/*Indies*/
+
+/*Games*/
+
+/*Ayuda*/
