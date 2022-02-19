@@ -15,6 +15,7 @@ header nav .Menu {
   justify-content: space-evenly;
   padding: 20px;
   font-size: 1.5rem;
+  transition: all 1s ease-in-out;
 }
 s .Menu li a {
   text-decoration: none;
@@ -29,6 +30,7 @@ s .Menu li a {
   border-radius: 5px;
   transform: scale(1.05);
   padding: 0.5rem 1rem;
+  border-bottom: 1px solid crimson;
 }
 
 /*Body*/
@@ -254,6 +256,21 @@ body {
 
 section img {
   width: 100%;
+}
+
+.fadeIn {
+  animation-name: FadeIn;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*Games*/
