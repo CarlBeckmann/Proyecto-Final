@@ -244,6 +244,18 @@ body {
 
 /*Indies*/
 
+.indies {
+  display: grid;
+  grid-column: span 5;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+}
+
+section img {
+  width: 100%;
+}
+
 /*Games*/
 
 /*Ayuda*/
