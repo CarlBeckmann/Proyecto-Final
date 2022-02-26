@@ -2,105 +2,147 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Proyecto Final</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Manjari&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css" />
 
     <link rel="icon" href="Imagenes/B.png" />
+    <title>Proyecto Final</title>
   </head>
 
   <body>
-    <header class="title">
-      <h1>Blythe</h1>
-    </header>
+    <span class="placeholder col-12 placeholder-lg"></span>
+    <span class="placeholder col-12"></span>
+    <span class="placeholder col-12 placeholder-sm"></span>
+    <span class="placeholder col-12 placeholder-xs"></span>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="Productos.html"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Indies.html">Indies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Ayuda.html">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div class="container">
-      <header class="header">
-        <nav>
-          <ul class="Menu">
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="Productos.html"> Producto</a></li>
-            <li><a href="Indies.html"> Galeria</a></li>
-            <li><a href="Games.html"> Comunidad</a></li>
-            <li><a href="Ayuda.html"> Ayuda</a></li>
-          </ul>
-        </nav>
-      </header>
+      <h1 class="display-1">Productos</h1>
+      <h2>Compra <small>y juega</small></h2>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis dicta
+        iure deserunt repellendus, pariatur, recusandae quas temporibus deleniti
+        fugiat itaque officia ipsam eveniet fuga nisi quod dolores earum
+        laboriosam?
+      </p>
+    </div>
 
-      <section class="producto">
+    <div class="card-group">
+      <div class="card">
         <article class="cosas">
-          <h2>Lorem, ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui
-            tenetur dolorem est commodi!
-          </p>
-          <br />
-          <ul>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-          </ul>
           <img
-            src="Imagenes/DanganronpaDecadence.jpg"
+            src="https://esporters.today/__export/1600271876745/sites/gammers/img/2020/09/16/halo_infinite_cindy_1.jpg_691115875.jpg"
+            class="card-img-top"
+            alt="Halo"
+          />
+        </article>
+        <div class="card-body">
+          <h5 class="card-title">Halo Inifite Edition</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, sequi laudantium ad dolores soluta blanditiis illum
+            quam iste molestias officia repellat doloremque dolore, praesentium
+            pariatur similique saepe, ipsa ullam? Nisi.
+          </p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card">
+        <article class="cosas">
+          <img
+            src="https://m.media-amazon.com/images/I/61tmyuD+sXL._SL1000_.jpg"
+            class="card-img-top"
             alt="DanganronpaDecadence"
           />
-          <button>Conseguir</button>
         </article>
-
-        <article class="cosas">
-          <h2>Lorem, ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui
-            tenetur dolorem est commodi!
+        <div class="card-body">
+          <h5 class="card-title">Danganronpa Decadence Colletor Edition</h5>
+          <p class="card-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+            cumque quibusdam assumenda consectetur ratione voluptatum nostrum
+            illum dolor minus. Labore nesciunt debitis quod natus explicabo
+            aliquid at rerum cumque et?
           </p>
-          <br />
-          <ul>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-          </ul>
-          <img src="Imagenes/Halo Infinite.png" alt="Halo" />
-          <br />
-          <button>Conseguir</button>
-        </article>
-
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+      <div class="card">
         <article class="cosas">
-          <h2>Lorem, ipsum dolor</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui
-            tenetur dolorem est commodi!
-          </p>
-          <br />
-          <ul>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-            <li>Lorem.</li>
-          </ul>
           <img
-            src="Imagenes/MegamanZeroColletion.jpg"
+            src="https://mfiles.alphacoders.com/618/618768.jpg"
+            class="card-img-top"
             alt="MegamanZeroColletion"
           />
-          <br />
-          <button>Conseguir</button>
         </article>
-      </section>
-
-      <footer class="footer">
-        <h1 class="subtitle">Redes Sociales</h1>
-        <div id="sociales">
-          <img class="logos" src="Imagenes/Instagram.png" alt="Logo" />
-          <img class="logos" src="Imagenes/Facebook.png" alt="Logo" />
-          <img class="logos" src="Imagenes/Twitter.png" alt="Logo" />
+        <div class="card-body">
+          <h5 class="card-title">Megaman Zero Colletion</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            qui ducimus numquam, quia ea natus quaerat culpa quos quibusdam!
+            Quas excepturi ex quisquam nam architecto porro expedita sequi
+            accusamus iste.
+          </p>
+          <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-      </footer>
+      </div>
     </div>
+
+    <span class="placeholder col-12 placeholder-xs"></span>
+    <span class="placeholder col-12 placeholder-sm"></span>
+    <span class="placeholder col-12"></span>
+    <span class="placeholder col-12 placeholder-lg"></span>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
