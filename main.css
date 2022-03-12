@@ -1,8 +1,18 @@
+
+
+
 /* General Styles */
 
 * {
   margin: 0;
   padding: 0;
+  
+}
+
+/*Hyperlinks*/
+
+a:link, a:visited, a:active {
+  text-decoration:none;
 }
 
 /*Background*/
@@ -12,6 +22,7 @@ body {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100%;
+
 }
 
 @keyframes gradient {
@@ -54,12 +65,16 @@ h1:hover span{
 }
 
 /*Nav*/
+
 .Menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style: none;
   justify-content: space-evenly;
+  font-family: 'Luxurious Roman', cursive;
+  font-size: larger;
+  color: #000000;
 }
 .hnav {
 padding: 1rem 2rem 1.15rem;
@@ -68,10 +83,11 @@ cursor: pointer;
 color: #000000;
 min-width: 80px;
 margin: auto;
+text-align: center;
 }
 
 .hnav:hover {
-background-image: url(https://www.seekpng.com/png/full/357-3572258_simple-black-frame-png-satin-black-elegant-embossed.png);
+background-image: url(https://splatoon.nintendo.com/assets/img/game-updates/hero-splat-5.svg);
 background-size: 100% 100%;
 color: #27262c;
 animation: spring 300ms ease-out;
@@ -112,99 +128,6 @@ text-decoration: none;
 
 /*Layout*/
 
-.subtitle {
-  text-align: center;
-  color: #dfe6e9;
-  font-size: 1.5rem;
-}
-
-.title h1 {
-  color: crimson;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 2.9em;
-  text-transform: uppercase;
-}
-
-.container2 {
-  width: 90%;
-  max-width: 1000px;
-  margin: 1.6em auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.container2 .header,
-.container2 .content,
-.container2 .container2,
-.container2 .footer,
-.container2 .container2 {
-  background: ;
-  padding: 20px;
-  border: 3px solid #000000;
-}
-
-.container2 .header,
-.container2 .footer {
-  grid-column: 1/6;
-  background-color: #ac0033;
-  color: #ffffff;
-}
-
-.container .content {
-  grid-column: span 5;
-  grid-row: span 2;
-}
-
-.content {
-  background-color: #ac0033;
-  display: flex;
-}
-
-.article {
-  background: #000000;
-  padding: 20px;
-  margin-top: 5px;
-  color: #dfe6e9;
-}
-
-.content .article h1,
-.content .article p {
-  padding: 10px;
-}
-
-.container2 .sidebar {
-  grid-column: span 2;
-  grid-row: span 4;
-  background: #485460;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container2 .sidebar img {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-}
-
-.container2 .related-post {
-  background: #2d3436;
-  color: #ffffff;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-
-.container2 .related-post:hover {
-  cursor: pointer;
-  color: #000000;
-  background: #ffffff;
-}
 
 /*Index*/
 
@@ -304,6 +227,14 @@ text-decoration: none;
   width: 50px;
   height: 50px;
   animation: from-left 2s ease;
+  margin: 20px;
+}
+
+.bgfooter {
+  background: linear-gradient(-45deg, #ffffff, #a1a1a1, #e3f7ff, #616161);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
 }
 
 @keyframes from-left {
@@ -319,6 +250,16 @@ text-decoration: none;
 
 /*Productos*/
 
+
+
+.productosection {
+  background: linear-gradient(-45deg, #defff7, #8fbef3, #237fd5, #b123d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+    height: auto;
+  display:flow-root;
+}
+
 #containerproducto {
   box-shadow: 0 15px 30px 1px grey;
   background: rgba(255, 255, 255, 0.9);
@@ -327,7 +268,7 @@ text-decoration: none;
   overflow: hidden;
   margin: 5em auto;
   height: 350px;
-  width: 700px;
+  width: 50%;
 }
 
 .detallesdelproducto {
@@ -485,12 +426,68 @@ text-decoration: none;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 0.7rem;
+  
 }
 
 section img {
   width: 100%;
+  border-radius: 10px;
 }
 
-/*Games*/
+/*Juegos*/
 
-/*Ayuda*/
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.containerlayout {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; 
+}
+
+.indexnav {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+.indexbody {
+  background: linear-gradient(-45deg, #fcff5f, #fbff1b, #fff9c8, #d5ba23);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+.indiesbody {
+  background: linear-gradient(-45deg, #000000, #424242, #919191, #141414);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+
+.switchsection {
+  background: linear-gradient(-45deg, #ff0000, #db1b1b, #ff9099, #d52323);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+.playsection {
+  background: linear-gradient(-45deg, #2f00ff, #4e1bdb, #9097ff, #236ad5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+.xboxsection {
+  background: linear-gradient(-45deg, #00ff15, #1bdb4b, #90ffac, #23d523);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+}
+
+/*Reseñas*/

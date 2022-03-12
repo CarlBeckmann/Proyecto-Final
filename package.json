@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlBeckmann/Proyecto-Final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlBeckmann/Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/CarlBeckmann/Proyecto-Final#readme"
+}
